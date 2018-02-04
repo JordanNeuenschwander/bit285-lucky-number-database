@@ -10,6 +10,8 @@ namespace bit285_lucky_number_database.Models
     {
         public LuckyNumberDbContext() : base("LuckyNumber") { }
 
+        public DbSet<lucky_number_database.Models.LuckyNumber> LuckyNumbers { get; set; }
+
 
     }
 }

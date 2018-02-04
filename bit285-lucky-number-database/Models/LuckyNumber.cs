@@ -8,9 +8,14 @@ namespace lucky_number_database.Models
 {
     public class LuckyNumber
     {
+
+        [Key]
+        public int LuckyId { get; set; }
+
         private Random _random = new Random();
         private int[] _spinner = new int[3];
         private decimal _balance;
+
 
         [Required]
         [Display(Name = "Lucky Number")]
